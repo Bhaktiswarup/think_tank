@@ -1,0 +1,72 @@
+initial_vision_task:
+  description: >
+    As the Visionary Thinker, start the discussion about {topic}. First, check if there are any 
+    previous discussions on this topic. If there are, review them for context. If there are no 
+    previous discussions, search the web for current information about this topic to inform your 
+    perspective. Present your bold, innovative perspective and share what excites you most about 
+    this idea. Think big and challenge conventional thinking.
+  expected_output: >
+    A compelling vision statement with 3-5 key innovative aspects of {topic} that 
+    could transform the current landscape, informed by current research and trends.
+  agent: visionary_thinker
+
+critical_analysis_task:
+  description: >
+    As the Critical Analyst, review the visionary's perspective on {topic} and 
+    identify potential risks, flaws, and challenges. First, check for previous discussions 
+    on this topic. If none exist, search the web for recent news and technical information 
+    about {topic} to identify current challenges and limitations. Ask tough questions and 
+    point out areas that need more scrutiny.
+  expected_output: >
+    A critical analysis identifying 3-5 key risks, challenges, or potential 
+    problems with the proposed vision for {topic}, supported by current research.
+  agent: critical_analyst
+
+practical_implementation_task:
+  description: >
+    As the Practical Implementer, respond to both the visionary's ideas and the 
+    critical analyst's concerns about {topic}. First, check for previous implementation 
+    discussions. If none exist, search the web for technical implementation details and 
+    case studies related to {topic}. Focus on how to make the vision actionable and 
+    address the identified challenges with concrete steps.
+  expected_output: >
+    A practical implementation plan with 3-5 concrete steps to address the 
+    challenges and make the vision for {topic} achievable, based on current best practices.
+  agent: practical_implementer
+
+market_analysis_task:
+  description: >
+    As the Market Expert, analyze the business viability of {topic} considering 
+    the vision, challenges, and implementation plan. First, check for previous market 
+    analyses. If none exist, search the web for current market trends, competitive 
+    landscape, and business opportunities related to {topic}. Assess market opportunities, 
+    competitive landscape, and commercial potential.
+  expected_output: >
+    A market analysis with 3-5 key insights about the business opportunity, 
+    competitive advantages, and market positioning for {topic}, informed by current market data.
+  agent: market_expert
+
+technical_evaluation_task:
+  description: >
+    As the Technical Specialist, evaluate the technical feasibility of {topic} 
+    based on all previous discussions. First, check for previous technical evaluations. 
+    If none exist, search the web for current technical developments, implementation 
+    challenges, and technological requirements related to {topic}. Assess technological 
+    requirements, challenges, and opportunities.
+  expected_output: >
+    A technical assessment with 3-5 key technical considerations, requirements, 
+    and feasibility factors for implementing {topic}, based on current technical landscape.
+  agent: technical_specialist
+
+synthesis_and_consensus_task:
+  description: >
+    As the Synthesis Coordinator, integrate all the diverse perspectives on {topic} 
+    from the previous discussions. First, check for previous synthesis reports. If none 
+    exist, perform a comprehensive web search to gather additional context about {topic}. 
+    Find common ground, resolve conflicts, and create a cohesive final recommendation 
+    that incorporates all perspectives and current information.
+  expected_output: >
+    A comprehensive synthesis report that integrates all perspectives on {topic}, 
+    including final recommendations, key insights, and next steps. Format as 
+    markdown with clear sections.
+  agent: synthesis_coordinator
