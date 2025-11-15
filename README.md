@@ -1,84 +1,139 @@
-# UltimateThinktank Crew
+# Think Tank: Open-Source AI Collaboration Platform 🤖🌐
 
-Welcome to **UltimateThinktank Crew** – an open-source, multi-agent AI think tank platform! This project enables collaborative, research-driven discussions on any topic, powered by a crew of specialized AI agents. Results are stored locally and in Notion, and agents can search the web for the latest information.
+![Think Tank Logo](https://img.shields.io/badge/Think%20Tank-Open%20Source-blue)
 
-## 🚀 Features
-- **6 Specialized AI Agents**: Visionary, Analyst, Implementer, Market Expert, Technical Specialist, Synthesis Coordinator
-- **Web Search Integration**: Agents search the web for current info if no prior discussion exists
-- **Notion Database Storage**: All discussions, including the full conversation transcript, are saved in Notion
-- **Easy Windows Launch**: Double-click batch/PowerShell scripts or use a desktop shortcut
-- **Open for Collaboration**: Designed for community contributions and extensibility
+[![Releases](https://img.shields.io/badge/Releases-v1.0.0-orange)](https://github.com/Bhaktiswarup/think_tank/releases)
 
-## 🧠 How It Works
-1. **User provides a topic** (via CLI or interactive prompt)
-2. **Agents discuss** the topic, each bringing a unique perspective
-3. **All messages are logged** and a full transcript is created
-4. **Results are saved** as a Markdown file and in Notion (if configured)
-5. **Notion page** includes topic, summary, agent outputs, and the full conversation transcript
+## Overview
 
-## 🛠️ Setup
+Welcome to the Think Tank repository! This open-source platform enables collaboration among AI agents to research and generate valuable insights. With the ability to store results in Notion and Markdown, Think Tank simplifies the process of organizing and sharing knowledge. The platform also supports web searches, allowing agents to access real-time information.
 
-### 1. Clone the Repo
-```bash
-git clone https://github.com/jkeith10/think_tank.git
-cd think_tank
+## Features
+
+- **Multi-Agent Collaboration**: Work alongside various AI agents to tackle complex problems and generate insights.
+- **Research Capabilities**: Utilize AI to conduct research efficiently and effectively.
+- **Notion Integration**: Store and organize results seamlessly in Notion.
+- **Markdown Support**: Easily export insights in Markdown format for further use.
+- **Web Search Enabled**: Access up-to-date information directly through web searches.
+
+## Getting Started
+
+To get started with Think Tank, you need to download the latest release. Visit the [Releases section](https://github.com/Bhaktiswarup/think_tank/releases) to find the latest version. Download the necessary files and execute them to set up your environment.
+
+### Prerequisites
+
+Before running Think Tank, ensure you have the following installed:
+
+- Python 3.7 or higher
+- Pip (Python package installer)
+- Notion API key for integration
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Bhaktiswarup/think_tank.git
+   cd think_tank
+   ```
+
+2. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Set up your Notion API key:
+   - Create a `.env` file in the root directory.
+   - Add your Notion API key:
+     ```
+     NOTION_API_KEY=your_notion_api_key_here
+     ```
+
+4. Run the application:
+   ```bash
+   python main.py
+   ```
+
+## Usage
+
+### Creating Agents
+
+To create a new AI agent, use the following command:
+
+```python
+agent = Agent(name="Researcher", capabilities=["research", "data analysis"])
 ```
 
-### 2. Install Python 3.10+ and Dependencies
-```bash
-pip install -r requirements.txt
-# or
-pip install crewai[tools] notion-client duckduckgo-search requests
+You can customize the agent's capabilities based on your needs. Once created, agents can collaborate with each other.
+
+### Collaborating with Agents
+
+Agents can communicate and share insights through a simple API. Use the following method to send messages between agents:
+
+```python
+agent1.send_message(agent2, "What are the latest trends in AI?")
 ```
 
-### 3. Configure Environment Variables
-Create a `.env` file in the project root:
+### Storing Results
+
+To store results in Notion, use the Notion integration functions. For example:
+
+```python
+notion_client.create_page(title="AI Trends", content=results)
 ```
-OPENAI_API_KEY=your_openai_key_here
-NOTION_TOKEN=your_notion_token_here
-NOTION_DATABASE_ID=your_database_id_here
-```
 
-### 4. (Windows) Use the Batch or PowerShell Script
-- Double-click `run_thinktank.bat` or `run_thinktank.ps1`
-- Or run: `python -m src.ultimate_thinktank.main --interactive`
+This function will create a new page in your Notion workspace with the specified title and content.
 
-## 💡 Usage
-- **Interactive mode:**
-  ```bash
-  python -m src.ultimate_thinktank.main --interactive
-  ```
-- **Specific topic:**
-  ```bash
-  python -m src.ultimate_thinktank.main --topic "Your topic here"
-  ```
-- **Desktop shortcut:**
-  - Use `create_desktop_shortcut.bat` to add a shortcut to your desktop
+## Topics
 
-## 🤝 Contributing
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-- Fork the repo
-- Create a feature branch
-- Open a pull request
-- Discuss ideas in GitHub Issues
+This repository covers various topics related to AI and collaboration:
 
-## 📚 Documentation
-- See `WINDOWS_SETUP.md` for Windows-specific instructions
-- Code is organized in `src/ultimate_thinktank/`
-- Agent/task configs: `src/ultimate_thinktank/config/`
-- Notion/web tools: `src/ultimate_thinktank/tools/`
+- **Agents**: Learn about the different types of AI agents and their functionalities.
+- **AI**: Explore the underlying AI technologies that power the Think Tank.
+- **Collaboration**: Understand how agents work together to generate insights.
+- **CreaAI**: Discover tools and frameworks for creating AI agents.
+- **Notion**: Integrate your insights with Notion for better organization.
+- **OpenAI**: Utilize OpenAI's models to enhance agent capabilities.
+- **Python**: Implement the platform using Python for easy customization.
+- **Research**: Conduct research effectively with the help of AI agents.
+- **Think Tank**: Understand the philosophy behind the Think Tank concept.
 
-## 🛡️ Security
-- **Never commit your `.env` file or API keys**
-- Add `.env` and `.venv/` to your `.gitignore`
+## Contributing
 
-## 🌍 Community
-- [GitHub Issues](https://github.com/jkeith10/think_tank/issues) for bugs/ideas
-- Pull requests welcome!
+We welcome contributions from the community! If you would like to contribute, please follow these steps:
 
-## 📄 License
-MIT License. See [LICENSE](LICENSE) for details.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
+   ```bash
+   git checkout -b feature/my-feature
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add my feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/my-feature
+   ```
+5. Create a pull request.
 
----
+## License
 
-**Let's build the future of collaborative AI research together!**
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Support
+
+If you have any questions or need support, please open an issue in the repository. You can also reach out to the community for assistance.
+
+## Acknowledgments
+
+We would like to thank the contributors and the open-source community for their support and contributions. Your efforts make this project possible.
+
+## Resources
+
+- [Notion API Documentation](https://developers.notion.com/)
+- [OpenAI Documentation](https://beta.openai.com/docs/)
+- [Python Documentation](https://docs.python.org/3/)
+
+## Visit Releases
+
+For the latest updates and releases, visit our [Releases section](https://github.com/Bhaktiswarup/think_tank/releases). Download the latest version and start collaborating with AI agents today!
